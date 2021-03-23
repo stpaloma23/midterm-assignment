@@ -8,22 +8,24 @@ body{
   min-height: 100vh;
   margin-left: 10vw;
   margin-right: 10vw;
-  background-color: green;
+  background-color: white;
+  font-family: 'Playfair Display', serif;
 }
 .top_header{
   height:200px;
-  background-color: blue;
+  background-color: white;
   object-fit: cover;
   display: flex;
   justify-content: center;
   font-size: 45px;
+  font-weight: 900;
 }
 .nav_bar{
   display: flex;
   justify-content: space-around;
   width:inherit;
-  background-color: red;
-  padding: 20px;
+  background-color: white;
+  padding: 12px;
 
 }
 .navword{
@@ -39,7 +41,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: green;
+  background: white;
   padding: 100px,0;
 }
 .timeline{

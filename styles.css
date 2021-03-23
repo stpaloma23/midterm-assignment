@@ -1,7 +1,7 @@
 body{
   margin: 0px;
   padding:0px;
-  font-family: Franklin,Arial,Helvetica,sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 .container{
   display: block;
@@ -9,6 +9,14 @@ body{
   margin-left: 10vw;
   margin-right: 10vw;
   background-color: white;
+}
+.smaller_pics{
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+.txt{
+  display: inline-block;
 }
 .top_header{
   height:200px;
@@ -30,7 +38,7 @@ body{
   display: flex;
 }
 .articles{
-  background-color: orange;
+  background-color: white;
   width: inherit;
   display: flex;
 
@@ -42,7 +50,7 @@ body{
 }
 .history_cont{
   width: 100%;
-  background-color: yellow;
+  background-color: white;
   padding: 10px;
   display: inline-block;
 
@@ -51,18 +59,21 @@ body{
   height:100%;
 }
 .current_issues{
+  display: flex;
   width: inherit;
-  background-color: purple;
+  background-color: white;
   height: 100%;
 }
 .effects_cont{
+  display: flex;
   width: inherit;
-  background-color: pink;
+  background-color: white;
   height: 100%;
 }
 a{
   text-decoration: none;
 }
+
 .articles ::before{ /*problem*/
   content: "";
   position: absolute;
