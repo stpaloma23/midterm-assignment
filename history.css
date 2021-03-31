@@ -82,7 +82,23 @@ a:hover{
   margin: 0 auto;
   position: relative;
 }
+img{
 
+  height:200px;
+  width:200px;
+  object-fit: cover;
+}
+.image{
+  display: inline-block;
+}
+.txt{
+  padding: 10px;
+  display: inline-block;
+}
+.events{
+  display: flex;
+  align-items: flex-start;
+}
 .timeline ul{
   list-style: none;
 }
@@ -100,6 +116,7 @@ a:hover{
   font-size: 30px;
   line-height: 30px;
   margin-bottom: 10px;
+  margin-top: 0px;
 }
 .timeline_cont p{
   font-size: 19px;
