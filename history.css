@@ -9,7 +9,6 @@ h1, h2, h3{
 
 p{
   font-family: 'Lora', serif;
-  font-size: 20px;
   text-align: justify;
 }
 
@@ -59,6 +58,7 @@ a:hover{
   width:inherit;
   background-color: white;
   padding: 10px;
+  font-size: 20px;
 }
 .navword{
   display: flex;
@@ -74,12 +74,11 @@ a:hover{
   align-items: center;
   justify-content: center;
   background: white;
-  padding: 100px,0;
+  padding: 0;
 }
 .timeline{
-  width: 80%;
+  width: 90%;
   height: auto;
-  max-width: 800px;
   margin: 0 auto;
   position: relative;
 }
@@ -88,7 +87,7 @@ a:hover{
   list-style: none;
 }
 .timeline ul li{
-  padding:20px;
+  padding:2px;
   background-color: white;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -98,12 +97,12 @@ a:hover{
   margin-bottom: 0;
 }
 .timeline_cont h1{
-  font-size: 25px;
+  font-size: 30px;
   line-height: 30px;
   margin-bottom: 10px;
 }
 .timeline_cont p{
-  font-size: 16px;
+  font-size: 19px;
   line-height: 30px;
 
 }
@@ -122,15 +121,27 @@ a:hover{
     margin-bottom: 50px;
     position: relative;
   }
-  .timeline ul li:nth-child(odd){
+  .timeline ul li:nth-child(odd){ /*making every other box go to the left*/
     float:left;
     clear:right; /*to get rid of the content on the right of the box*/
     transform: translate(-30px);
   }
-  .timeline ul li:nth-child(even){
+  .timeline ul li:nth-child(odd) h1:hover{
+    color: orange;
+    text-decoration: underline;
+    padding-bottom: 3px;
+
+  }
+  .timeline ul li:nth-child(even){ /*every other box goes to the right*/
     float:right;
     clear:left; /*get rid of content to the left of the box*/
     transform: translate(30px);
+  }
+  .timeline ul li:nth-child(even) h1:hover{
+    color: green;
+    text-decoration: underline;
+    padding-bottom: 3px;
+
   }
   .timeline ul li::after{ /*creating the dot on the timeline*/
     content: "";
@@ -151,7 +162,7 @@ a:hover{
     left: -30px; /*moves the dot to the line*/
 
   }
-  .timeline ul li:hover::after{
+  .timeline ul li:hover::after{ /*making the dot change color when hover*/
     background-color: orange;
 
   }

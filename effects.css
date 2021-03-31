@@ -8,6 +8,7 @@ h1, h2, h3{
 }
 p{
   font-family: 'Lora', serif;
+  font-size: 20px;
 }
 a{
   text-decoration: none;
@@ -41,6 +42,7 @@ a:hover{
   width:inherit;
   background-color: white;
   padding: 10px;
+  font-size: 20px;
 }
 .navword{
   display: flex;
@@ -54,14 +56,12 @@ a:hover{
   width: 40%;
   background-color: white;
   border-radius: 10px;
-  border: 2px solid black;
   padding: 10px;
 }
 .effect_1{
   width: 40%;
   background-color: white;
   border-radius: 10px;
-  border: 2px solid black;
   padding: 10px;
 }
 .effects_cont{
@@ -84,5 +84,5 @@ a:hover{
 }
 img{
   width: 50%;
-  height: 50%
+
 }
